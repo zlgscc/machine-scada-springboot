@@ -25,7 +25,6 @@ public abstract class BasedModel implements Model<String>, Serializable{
     private String id ;
     private Date createTime = new Date();
 
-
     @Id
     @Column(name = "ID",length = 100)
     @GeneratedValue(generator = "ai-uuid")
