@@ -2,6 +2,7 @@ package com.example.admin.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * @ProjectName: machine-scada
@@ -27,5 +28,10 @@ public class AdminController {
         return "index";
     }
 
+    //测试类
+    @PostMapping(value = "/ajax/getusername")
+    public String getAjaxUserName(){
+        return null;
+    }
 
 }
